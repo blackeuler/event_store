@@ -26,6 +26,17 @@ We will have the following events:
 
 So yeah you can think of your day as a software engineer and you have things to do. You create a todo, you update the title and you complete it.
 
+## Roadmap
+
+- [ ] Event Store 
+      - get all events 
+      - get events by aggregate id
+      - persist events
+      
+
+
+
+
 # How to run this?
 
 
