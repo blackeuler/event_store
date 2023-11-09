@@ -49,9 +49,14 @@ What are you not allowed to do with TODOs?
 
 I should be able to see a list of TODOs.
 I should be able to add a TODO to my list.
-I should be able to mark a TODO as complete.
-I should be able to delete a TODO.
-I should be able to edit the title of a TODO.
+
+Listing my TODOs will require a projection.
+
+
+
+I should be able to mark a TODO as complete with an identfier.
+I should be able to delete a TODO using an identifier.
+I should be able to edit the title of a TODO using an identfier.
 
 
 
