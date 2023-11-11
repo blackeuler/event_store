@@ -19,4 +19,8 @@ defmodule Events101.Events do
   def get_events() do
     EventStore.get()
   end
+
+  def rewind(event_id) do
+    EventStore.rewind(event_id)
+  end
 end

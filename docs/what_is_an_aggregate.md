@@ -58,9 +58,17 @@ I should be able to mark a TODO as complete with an identfier.
 I should be able to delete a TODO using an identifier.
 I should be able to edit the title of a TODO using an identfier.
 
+For sake of example I will add a constraint that you cant add more than 10 todos at a time. To motivate finishing things.
 
 
+So after doing the projections code, I think that yes a genserver fits very nicely to what im trying to do here. 
 
+A GenServer is listening for events, bubt they only respond to the events that trigger them, 
+if an even trrigered them it might trigger more events, but it might not, like 
+todo_creation_requested
+
+If you are within the thereshold of todos allowed say 10 you can create 
+but if you are
 
 
 

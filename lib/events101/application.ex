@@ -13,6 +13,7 @@ defmodule Events101.Application do
       {DNSCluster, query: Application.get_env(:events101, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Events101.PubSub},
       {Events101.Events.EventStore, name: Events101.Events.EventStore},
+      {Events101.Todos, name: Events101.Todos},
       # Start the Finch HTTP client for sending emails
       {Finch, name: Events101.Finch},
       # Start a worker by calling: Events101.Worker.start_link(arg)

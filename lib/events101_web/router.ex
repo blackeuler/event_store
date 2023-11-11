@@ -17,7 +17,7 @@ defmodule Events101Web.Router do
   scope "/", Events101Web do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", TodosLive
   end
 
   # Other scopes may use custom stacks.
