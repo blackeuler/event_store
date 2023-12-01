@@ -110,6 +110,7 @@ defmodule Events101Web.TodosLive do
      assign(socket, todos: todos) |> assign(events: events) |> assign(current_events: events)}
   end
 
+  @impl true
   def handle_event("rewind", %{"event_id" => event_id}, socket) do
     events = Events.rewind(event_id)
     todos = events |> Projections.list_todos()
@@ -131,6 +132,7 @@ defmodule Events101Web.TodosLive do
     {:noreply, socket}
   end
 
+  @impl true
   def handle_info(event, socket) do
     todos =
       event

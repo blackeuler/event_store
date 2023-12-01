@@ -18,6 +18,7 @@ defmodule Events101Web.Router do
     pipe_through :browser
 
     live "/", TodosLive
+    live "/events", EventsLive
   end
 
   # Other scopes may use custom stacks.
